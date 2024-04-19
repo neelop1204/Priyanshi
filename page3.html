@@ -7,8 +7,8 @@
     <title>Page-03</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Platypi:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Platypi:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -40,18 +40,24 @@
             </form>
 
             <button onclick="submitForm()">Submit</button>
-<p>I choose this day of 21 April as we both complete our one year in CANADA.</p>
-<p>This is the song which I want to dedicate to you Priyanshi.</p>
-<audio controls>
-    <source src="./Song/Christina_Perri_-_A_Thousand_Years_CeeNaija.com_.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-</audio>
+            <p>I choose this day of 21 April as we both complete our one year in CANADA.</p>
+            <p>This is the song which I want to dedicate to you Priyanshi.</p>
+            <audio id="myAudio" controls>
+                <source src="./Song/Christina_Perri_-_A_Thousand_Years_CeeNaija.com_.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <button onclick="playAudio()">Play Song</button>
 
         </section>
         
-        
     </div>
     <script src="./js/script.js"></script>
+    <script>
+        function playAudio() {
+            var audio = document.getElementById('myAudio');
+            audio.play();
+        }
+    </script>
 
 </body>
 </html>
