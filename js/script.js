@@ -1,4 +1,4 @@
-fetch('http://localhost:8000/submit.php', {
+fetch('https://neelop1204.github.io/Priyanshi/submit.php', {
     method: 'POST',
     body: formData
 })
