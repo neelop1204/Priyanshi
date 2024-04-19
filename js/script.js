@@ -1,4 +1,6 @@
-function submitForm() {
+function submitForm(event) {
+    event.preventDefault();  // Prevent default form submission
+
     // Get form data
     const form = document.querySelector('#responseForm');  // Select the form
     console.log(form);  // Log the form to check if it's selected correctly
