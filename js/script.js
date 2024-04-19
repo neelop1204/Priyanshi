@@ -4,7 +4,7 @@ function submitForm() {
     const formData = new FormData(form);
 
     // Make fetch request
-    fetch('submit.php', {
+    fetch('https://neelop1204.github.io/Priyanshi/submit.php', {
         method: 'POST',
         body: formData
     })
