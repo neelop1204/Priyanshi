@@ -1,6 +1,6 @@
 function submitForm() {
     // Get form data
-    const form = document.querySelector('.questions-section');
+    const form = document.querySelector('#responseForm');  // Select the form
     const formData = new FormData(form);
 
     // Make fetch request

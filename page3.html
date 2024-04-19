@@ -17,26 +17,30 @@
             <p><strong>Did you know after death the human brain lives on for the seven minutes to replay its best memories. Will you be my seven minutes?</strong></p>
         </section>
 
-        <form action="submit.php" method="post">
-            <div class="question">
-                <p>Do you feel the same way?</p>
-                <label>
-                    <input type="radio" name="feeling" value="yes" required>
-                    Yes
-                </label>
-                <label>
-                    <input type="radio" name="feeling" value="no" required>
-                    No
-                </label>
-            </div>
+        <section class="questions-section">
+            <form id="responseForm">
+                <div class="question">
+                    <p>Do you feel the same way?</p>
+                    <label>
+                        <input type="radio" name="feeling" value="yes">
+                        Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="feeling" value="no">
+                        No
+                    </label>
+                </div>
         
-            <div class="question">
-                <p>If yes, please share your thoughts and Please don't leave it empty:</p>
-                <textarea name="thoughts" rows="4" cols="50" placeholder="Share your thoughts here..." required></textarea>
-            </div>
-        
+                <div class="question">
+                    <p>If yes, please share your thoughts and Please dont leave it empty:</p>
+                    <textarea name="thoughts" rows="4" cols="50" placeholder="Share your thoughts here..."></textarea>
+                </div>
+            </form>
+
             <button onclick="submitForm()">Submit</button>
-        </form>
+
+        </section>
+        
         
     </div>
     <script src="./js/script.js"></script>
