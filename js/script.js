@@ -1,6 +1,6 @@
 function submitForm() {
     // Get form data
-    const form = document.getElementById('responseForm');  // Select the form by ID
+    const form = document.querySelector('#responseForm');  // Select the form
     const formData = new FormData(form);
 
     // Make fetch request
@@ -8,9 +8,13 @@ function submitForm() {
         method: 'POST',
         body: formData
     })
-    .then(response => response.text())
+    .then(response => response.json())
     .then(data => {
-        console.log(data); // Should print "Thank You Priyanshi!!" if successful
+        if (data.success) {
+            console.log("Thank You Priyanshi!!");
+        } else {
+            console.error('Error:', data.message);
+        }
     })
     .catch((error) => {
         console.error('Error:', error);
