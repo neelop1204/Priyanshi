@@ -1,6 +1,7 @@
 function submitForm() {
     // Get form data
     const form = document.querySelector('#responseForm');  // Select the form
+    console.log(form);  // Log the form to check if it's selected correctly
     const formData = new FormData(form);
 
     // Make fetch request
